@@ -97,9 +97,8 @@ module JasmineRails
       jasmine_config['force_ssl'] || false
     end
 
-    # use the phantom command from the phantom gem. Set to false if you want to manage your own phantom executable
     def use_phantom_gem?
-      jasmine_config['use_phantom_gem'].nil? || jasmine_config['use_phantom_gem'] == true
+      false # see jasmine-rails.gemspec
     end
 
     # @return [Array<String>]

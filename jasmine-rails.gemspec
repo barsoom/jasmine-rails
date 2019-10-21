@@ -18,7 +18,9 @@ Gem::Specification.new do |s|
   s.add_dependency "railties", ">= 3.2.0"
   s.add_dependency "sprockets-rails"
   s.add_dependency "jasmine-core", [">= 1.3", "< 4.0"]
-  s.add_dependency "phantomjs", ">= 1.9"
+
+  # Removed in this fork since we run js tests with capybara/apparition/chromium by visiting "/specs" and checking for success.
+  # s.add_dependency "phantomjs", ">= 1.9"
 
   if Gem.ruby_version >= Gem::Version.new("2.2.2")
     s.add_development_dependency "github_changelog_generator"
